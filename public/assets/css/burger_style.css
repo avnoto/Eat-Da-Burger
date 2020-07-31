@@ -1,0 +1,68 @@
+body,
+.jumbotron {
+  background-color: #f7dca2;
+}
+
+.jumbotron {
+  border-bottom: 2px solid #43bb5b;
+  padding-bottom: 0;
+}
+
+body {
+  font-family: 'Baloo Chettan 2', cursive;
+}
+
+h1,
+h3 {
+  font-family: 'Luckiest Guy', cursive;
+  line-height: 3.5rem;
+  letter-spacing: 0.2rem;
+}
+
+h1 {
+  font-size: 75px;
+}
+
+h3 {
+  font-size: 50px;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+label {
+  border-radius: 40px;
+}
+
+input {
+  width: 120% !important;
+}
+
+.burger-title {
+  height: 200px;
+}
+
+ul {
+  list-style: none;
+}
+
+h4 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+li {
+  font-size: 20px;
+}
+
+.change-eaten {
+  margin-left: 10px;
+}
+
+.delete-burger {
+  margin-left: 10px;
+}

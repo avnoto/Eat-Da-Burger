@@ -1,0 +1,64 @@
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 col-sm-6 p-0 burger-title">
+            <h1>EAT</h1>
+            <h3>DA</h3>
+            <h1>BURGER!</h1>
+          </div>
+          <div class="col-xs-6 col-sm-6">
+          <img src="/assets/img/clipart870807.png" />
+        </div>
+        <form class="create-form">
+          <div class="form-row align-items-center">
+            <div class="col-auto">
+              <label class="sr-only" for="inlineFormInput">Burger</label>
+              <input type="text" class="form-control mb-5" id="inlineFormInput" placeholder="Add a burger to the menu...">
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-success ml-5 mb-5">Add!</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-sm-6">
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h4 class="panel-title">BURGERS</h4>
+          </div>
+          <div class="panel-body">
+          <ul class="d-inline">
+            {{#each burgers}}
+            {{#unless devoured}}
+            <li>{{this.burger_name}} {{>button devoured=false}}</li>
+            <hr>
+            {{/unless}}
+            {{/each}}
+          </ul>
+        </div>
+        </div>
+        </div>
+        <div class="col-xs-6 col-sm-6">
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h4 class="panel-title">DEVOURED</h4>
+          </div>
+          <div class="panel-body">
+          <ul class="d-inline">
+            {{#each burgers}}
+            {{#if devoured}}
+            <li>{{this.burger_name}} <button class="btn btn-danger delete-burger" data-id="{{id}}"><i class="fa fa-trash"></i></button></li>
+            <hr>
+            {{/if}}
+            {{/each}}
+          </ul>
+        </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
