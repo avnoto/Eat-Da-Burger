@@ -34,7 +34,7 @@
           <ul class="d-inline">
             {{#each burgers}}
             {{#unless devoured}}
-            <li>{{this.burger_name}} {{>button devoured=false}}</li>
+            <li>{{this.burger_name}} <button class="btn btn-warning change-eaten" data-id="{{id}}" data-devoured="{{devoured}}">EAT!</button></li>
             <hr>
             {{/unless}}
             {{/each}}
